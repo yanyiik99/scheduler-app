@@ -5,7 +5,7 @@ function Navbar() {
 
 
   return (
-    <nav className="w-full bg-gray-200">
+    <nav className="w-full bg-white">
       <div className="max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-6xl xl:max-w-[1440px] px-6 py-4 mx-auto flex justify-between">
         {/* Logo */}
         <div>
