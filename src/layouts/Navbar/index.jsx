@@ -8,8 +8,11 @@ function Navbar() {
     <nav className="w-full bg-white">
       <div className="max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-6xl xl:max-w-[1440px] px-6 py-4 mx-auto flex justify-between">
         {/* Logo */}
-        <div>
-          <img src="https://www.w3schools.com/images/lamp.jpg" alt="logo movio" className="block w-12 h-12"/>
+        <div className='flex flex-col '>
+          <img src={images.logo} alt="logo movio" className="w-12 h-12"/>
+          <span className='text-sm hidden md:inline font-bold'>
+            MOVIO CALENDAR
+          </span>
         </div>
 
         {/* Right Nav */}

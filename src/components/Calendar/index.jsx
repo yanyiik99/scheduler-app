@@ -291,11 +291,6 @@ function Calendar() {
               </p>
               <p>
                 {
-                  // dateState.toLocaleDateString('en-GB', {
-                  //   day: 'numeric',
-                  //   month: 'short',
-                  //   year: 'numeric'
-                  // })
                   moment().format('dddd Do MMMM')
                 }
               </p> 
@@ -326,9 +321,9 @@ function Calendar() {
           <Item>
 
             <div>
-                <div className='py-3 z-50 bg-green-400 bottom-0 left-0 right-0 ml-auto mr-auto text-center fixed md:bg-transparent md:flex md:w-full md:justify-end md:relative md:py-2 md:pr-6'> 
+                <div className='py-3 z-50 h-10 bg-teal-500 bottom-0 left-0 right-0 ml-auto mr-auto text-center fixed md:bg-transparent md:flex md:w-full md:justify-end md:relative md:py-2 md:pr-6'> 
                 {/* with flex  w-full flex justify-end */}
-                  <Button className='bg-orange-500 hover:bg-orange-700 w-4 h-16 md:w-auto md:h-auto rounded-full md:rounded-sm' variant="contained" onClick={handleClickOpen} >
+                  <Button className='bg-orange-500 hover:bg-orange-700 w-4 h-16 absolute m-auto left-0 right-0 bottom-3 md:relative md:mr-0 md:mt-1 md:w-auto md:h-auto rounded-full md:rounded-sm' variant="contained" onClick={handleClickOpen} >
                     <span className='mr-3 font-bold hidden md:flex'>
                       Buat Acara
                     </span>
@@ -341,7 +336,7 @@ function Calendar() {
                   open={open}
                 >
                   <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClickClose}>
-                      Modal title
+                      Tambahkan Acaras
                   </BootstrapDialogTitle>
                   <DialogContent dividers>
                     {/* TITLE */}
@@ -403,7 +398,7 @@ function Calendar() {
                     </Typography>
                     
                     {/* Location */}
-                    <Typography gutterBottom>
+                    <Typography gutterBottom component={'div'}>
                       <div>
                         <TextField
                           type="text"
