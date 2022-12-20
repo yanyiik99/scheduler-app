@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+# TESTING PROJECT SCHEDULER APP REACT PWA 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was use CRA [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## SHORT DESCRIPTION 
+
+This Project I build with REACT PWA make a scheduler app with local data use state management
+Next plan I'll improve with integrated a redux and API ||
+Cache or localstorage or Redux Persist
 
 In the project directory, you can run:
 
